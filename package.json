@@ -8,11 +8,11 @@
     "director": "1.2.x",
     "font-awesome": "4.5.x",
     "jquery": "2.2.x",
-    "lodash": "4.6.x",
+    "lodash": "4.8.x",
     "magnific-popup": "1.1.x",
     "marked": "0.3.x",
-    "react": "0.14.x",
-    "react-dom": "0.14.x",
+    "react": "15.0.x",
+    "react-dom": "15.0.x",
     "signals": "1.0.x"
   },
   "devDependencies": {
@@ -25,7 +25,7 @@
     "gulp-typescript": "2.12.x",
     "gulp-uglify": "1.5.x",
     "gulp-usemin": "0.3.x",
-    "jest-cli": "0.9.x",
+    "jest-cli": "0.10.x",
     "merge2": "1.0.x",
     "proxy-middleware": "0.15.x",
     "run-sequence": "1.1.x",
