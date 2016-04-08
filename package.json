@@ -13,8 +13,7 @@
     "marked": "0.3.x",
     "react": "0.14.x",
     "react-dom": "0.14.x",
-    "signals": "1.0.x",
-    "systemjs": "^0.19.25"
+    "signals": "1.0.x"
   },
   "devDependencies": {
     "del": "2.2.x",
@@ -30,7 +29,13 @@
     "merge2": "1.0.x",
     "proxy-middleware": "0.15.x",
     "run-sequence": "1.1.x",
-    "typings": "0.7.x"
+    "typings": "0.7.x",
+    "browserify": "13.0.x",
+    "lodash.assign": "4.0.x",
+    "vinyl-buffer": "1.0.x",
+    "vinyl-source-stream": "1.1.x",
+    "watchify": "3.7.x",
+    "tsify": "0.14.x"
   },
   "scripts": {
     "test": "jest",

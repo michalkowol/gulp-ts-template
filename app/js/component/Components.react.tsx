@@ -1,6 +1,8 @@
-import React from 'react';
-import _ from 'lodash';
-import ReactDOM from 'react-dom';
+/// <reference path="../../../typings/browser.d.ts" />
+
+import * as React from 'react';
+import * as _ from 'lodash';
+import * as ReactDOM from 'react-dom';
 
 const Stateful = React.createClass({
   searchTextChanged() {
