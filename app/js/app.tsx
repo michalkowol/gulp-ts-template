@@ -1,3 +1,5 @@
+/// <reference path="../../typings/browser.d.ts" />
+
 import Stateful from './component/Components.react';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';

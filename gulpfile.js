@@ -12,7 +12,6 @@ var ts = require('gulp-typescript');
 var merge = require('merge2');
 
 var paths = {
-  ts: ['app/js/**/*.ts', 'app/js/**/*.tsx', 'typings/browser.d.ts'],
   css: ['node_modules/bootstrap/dist/css/**/*.css', 'node_modules/magnific-popup/dist/**/*.css'],
   sass: ['app/css/**/*.scss'],
   assets: ['app/**/*.html', 'app/css/**/*.css', 'app/.htaccess', 'app/img/**/*', 'app/api/**/*']
@@ -44,7 +43,7 @@ var bundle = (function () {
   var bundleClosure = function () {
     gutil.log("Starting '", gutil.colors.cyan("\bbrowserify"), "\b'...");
     return watchifyBundle.bundle()
-      .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+    .on('error', function (error) { gutil.log(error.toString()); })
       .pipe(source('bundle.js'))
       .pipe(buffer())
       .pipe(sourcemaps.init({loadMaps: true}))
@@ -117,7 +116,6 @@ gulp.task('connect', function () {
 });
 
 gulp.task('watch', function () {
-  gulp.watch(paths.ts, ['ts']);
   gulp.watch(paths.css, ['css']);
   gulp.watch(paths.sass, ['sass']);
   gulp.watch(paths.assets, ['assets']);
