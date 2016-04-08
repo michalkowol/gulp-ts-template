@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- build:css css/lib.css -->
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <!-- endbuild -->
+  <!-- build:css css/style.css -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- endbuild -->
+  <script src="js/system.js"></script>
+  <script>
+    System.config({
+      map: {
+        react: 'js/react.min.js',
+        'react-dom': 'js/react-dom.min.js',
+        'director': 'js/director.min.js'
+      },
+      packages: {        
+        js: {
+          format: 'register',
+          defaultExtension: 'js'
+        }
+      }
+    });
+    System.import('js/app').then(null, console.error.bind(console));
+  </script>
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div id="demo"></div>
+      <h1 id="hello">Hello, World!</h1>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
