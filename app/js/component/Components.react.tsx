@@ -1,11 +1,11 @@
-import * as React from 'react';
-import * as _ from 'lodash';
-import * as ReactDOM from 'react-dom';
+import * as React from 'react'
+import * as _ from 'lodash'
+import * as ReactDOM from 'react-dom'
 
 interface StatefulState {
   title: string;
-};
-interface StatefulProps {};
+}
+interface StatefulProps {}
 
 class Stateful extends React.Component<StatefulProps, StatefulState> {
   constructor(props : StatefulProps) {
